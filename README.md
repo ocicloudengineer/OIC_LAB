@@ -2,8 +2,7 @@
 Repositorio que contiene los terraforms necesarios para desplegar la arquitectura de DR para OIC.
 
 ## Arquitectura propuesta
-![Arquitectura](/assets/img/MarineGEO_logo.png "MarineGEO logo")
+![Arquitectura](/multicloud-through-oic-arch.drawio.png)
 
 ## Documentación de la solución
-[DR for OIC](https://link-url-here.org)
-
+<a href="./OIC_Configuring a Disaster Recovery Solution.pdf" target="_top">Documentación</a>

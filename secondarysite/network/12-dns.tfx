@@ -1,0 +1,14 @@
+resource "oci_dns_zone" "lab-dr-dns-zone" {
+    #Required
+    compartment_id = module.compartment_oic_sample_prd_net.id
+    name = var.zone_name
+    zone_type = var.zone_type
+
+}
+
+resource "oci_dns_rrset" "lab-dr-dns-record" {
+    #Required
+    zone_name_or_id = var.zone_name
+    domain          = "${var.environment}-${var.proyecto}-${var.region}.oci.labdr.co"
+    rtype           = "A"
+}

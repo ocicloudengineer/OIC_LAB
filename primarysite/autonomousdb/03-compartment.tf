@@ -1,4 +1,4 @@
-module "compartment_oic_sample_prd_integration" {
+module "compartment_oic_sample_prd_integration_atp" {
   source = "../../modules/compartment"
   #Required
   compartment_id          = "${var.parent_lab_dr_compartment_ocid}"

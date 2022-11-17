@@ -4,7 +4,7 @@ variable "tenancy_ocid" {
 }
 
 variable "region" {
-  default = "us-ashburn-1"
+  default = "us-phoenix-1"
 }
 
 variable "environment" {
@@ -20,7 +20,7 @@ variable "proyecto" {
 }
 
 variable "configuration" {
-  description = "ATP configuration"
+  description = "OIC configuration"
   default = [
     {
       "name"      : "LAB-DR-PRD"
@@ -29,10 +29,6 @@ variable "configuration" {
 }
 
 variable "parent_lab_dr_compartment_ocid" {
-  description = "OCID de compartment prinicipal para el Laboratorio"
-  default     = "ocid1.compartment.oc1..aaaaaaaatwhzwxo5zzj6cr6yliputc6sv22hibtfl6yg4g3tgo3ycpcin5ya"  #Get after root lab compartment creation - ORA_TCE_OIC_LAB_DR
-}
-
-variable "autonomous_database_admin_password" {
-  default = "Oiclabautodb1234"
+  description = "OCID de compartment para el Laboratorio"
+  default     = "ocid1.compartment.oc1..aaaaaaaatwhzwxo5zzj6cr6yliputc6sv22hibtfl6yg4g3tgo3ycpcin5ya"  #Get after root lab compartment creation
 }
